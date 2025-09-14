@@ -1,0 +1,19 @@
+services:
+  api:
+    build: .
+    container_name: criptopix-mg
+    ports:
+      - "4001:4001"
+    env_file:
+      - .env
+    volumes:
+      - .:/app         # monte o código
+    command: sh -c "npm install && npm run dev"
+
+  tunnel:
+    image: cloudflare/cloudflared:latest
+    container_name: cf-tunnel
+    # aponta o tunnel para o serviço "api" na porta 4001
+    command: tunnel --url http://api:4001
+    depends_on:
+      - api
