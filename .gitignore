@@ -1,1 +1,23 @@
-printf "node_modules/\n.env\n.env.*\n.DS_Store\n" >> .gitignore
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+
+# Env
+.env
+.env.*
+!.env.example
+
+# SO / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Builds
+dist/
+build/
+coverage/
