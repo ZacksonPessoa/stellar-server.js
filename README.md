@@ -311,7 +311,7 @@ MIT — uso livre para estudos e POCs. Veja `LICENSE` (se aplicável).
 
 ## 👥 Autores e crédito
 
-* **Zack (Analista de Sistemas)** — idealização e desenvolvimento
+* **Zackson Pessoa (Analista de Sistemas)** — idealização e desenvolvimento
 
 
 > Dúvidas ou melhorias? Abra uma *issue* ou envie sugestões no próximo commit.
